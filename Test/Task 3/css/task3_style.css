@@ -1,0 +1,461 @@
+body {
+  margin: 0;
+}
+
+/* Main Container section */
+.mainContainer {
+  width: 1920px;
+  height: 1080px;
+}
+
+.baseContainer {
+  position: absolute;
+  width: 680px;
+  height: 1080px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+
+.imageContainer {
+  position: absolute;
+  width: 1240px;
+  height: 1080px;
+  left: 680px;
+  z-index: -1;
+}
+
+/* Navigation bar section */
+.topBar {
+  width: 480px;
+  height: 40px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.logoPineapple {
+  position: absolute;
+  width: 118px;
+  height: 40px;
+}
+
+.links {
+  margin-top: 14px;
+  line-height: 27px;
+  float: right;
+  margin-right: 1px;
+}
+
+.links a {
+  margin-left: 26px;
+  text-decoration: none;
+}
+
+/* Text parameters */
+.greyText {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #6A707B;
+}
+
+/* Middle area with text */
+.textContainer {
+  height: 399px;
+  margin-left: 140px;
+  margin-right: 141px;
+}
+
+.heading {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  padding-top: 234px;
+  color: #131821;
+}
+
+.subHeading {
+  line-height: 28px;
+}
+
+/* Input field area */
+.inputContainer {
+  height: 201px;
+  margin-left: 100px;
+}
+
+.blueStripe {
+  position: absolute;
+  height: 70px;
+  width: 4px;
+  background-color: #4066A5;
+}
+
+.inputButton:hover {
+  box-shadow: 0 30px 40px rgba(19, 24, 33, 0.06);
+}
+
+.emailInput:focus {
+  border-color: #4066A5;
+  box-shadow: 0 30px 40px rgba(19, 24, 33, 0.06);
+  color: #131821;
+  outline: none;
+}
+
+.emailInput:focus+.btn {
+  border-color: #4066A5;
+}
+
+.emailInput:focus+.icon-ic_arrow:before {
+  color: #4066A5;
+  opacity: 1;
+}
+
+.inputButton {
+  height: 70px;
+  width: 663px;
+}
+
+.emailInput {
+  width: 580px;
+  height: 70px;
+  border: 1px solid #E3E3E4;
+  border-right: none;
+  box-sizing: border-box;
+  padding-left: 43px;
+  padding-top: 3px;
+  float: left;
+}
+
+.btn {
+  position: absolute;
+  float: left;
+  width: 83px;
+  height: 70px;
+  background: white;
+  border: 1px solid #E3E3E4;
+  border-left: none;
+  box-sizing: border-box;
+  padding-right: 26px;
+  padding-top: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Custome checkbox section */
+.checkBoxPosition {
+  margin-left: 36px;
+  padding-top: 51px;
+}
+
+.checkbox {
+  display: inline-flex;
+  cursor: pointer;
+  position: relative;
+}
+
+.checkbox .mainSpan {
+  padding-left: 12px;
+  padding-top: 8px;
+}
+
+.checkbox input {
+  height: 26px;
+  width: 26px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: 1px solid #E3E3E4;
+  border-radius: 3px;
+  outline: none;
+  transition-duration: 0.01s;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+
+.checkbox input:checked {
+  border: 1px solid #4066A5;
+  background-color: #4066A5;
+  background-image: url("images/ic_checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.label {
+  position: absolute;
+  margin-left: 12px;
+  margin-top: 8px;
+}
+
+.service {
+  color: #131821;
+}
+
+.service:hover {
+  color: #4066A5;
+}
+
+.service:visited {
+  color: #233759;
+}
+
+/* Alert box section */
+.alert p {
+  margin-top: 0;
+}
+
+.alert {
+  width: 400px;
+  margin-left: 140px;
+  margin-bottom: 30px;
+  color: #f05454;
+  border: 1px #ce6262 solid;
+  box-sizing: border-box;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 10px;
+  background-color: #E3E3E4;
+}
+
+/* Horizontal rule */
+hr {
+  background-color: #E3E3E4;
+  margin: 0;
+  height: 1px;
+  border: 0;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+/* Social links section */
+.socialLinksContainer {
+  text-align: center;
+  margin-left: 218px;
+}
+
+.wiki {
+  width: 46px;
+  height: 46px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 50px;
+  border-radius: 50%;
+  border: 2px #E3E3E4 solid;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.wiki:hover {
+  border: none;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.wiki:hover:before {
+  color: white;
+  opacity: 1;
+}
+
+.wiki:active:before {
+  color: white;
+  opacity: 1;
+}
+
+/* Active state can be changed to visited */
+.icon-ic_facebook:hover {
+  background-color: #4267B2;
+}
+
+.icon-ic_facebook:active {
+  background-color: #2F4A80;
+}
+
+.icon-ic-instagram:hover {
+  background-color: #C13584;
+}
+
+.icon-ic-instagram:active {
+  background-color: #8F2762;
+}
+
+.icon-ic_twitter:hover {
+  background-color: #1DA1F2;
+}
+
+.icon-ic_twitter:active {
+  background-color: #177FBF;
+}
+
+.icon-ic-youtube:hover {
+  background-color: #FF0000;
+}
+
+.icon-ic-youtube:active {
+  background-color: #CC0000;
+}
+
+
+/* Mobile parameters */
+@media only screen and (max-width: 400px) {
+  .mainContainer {
+    width: 375px;
+    height: 812px;
+  }
+
+  .baseContainer {
+    position: absolute;
+    width: 375px;
+    height: 812px;
+  }
+
+  .imageContainer {
+    display: none;
+  }
+
+  .topBar {
+    width: 345px;
+    height: 66px;
+    margin-top: 0;
+    background: #FFFFFF;
+    margin-left: 10px;
+  }
+
+  .desktopApple {
+    display: none;
+  }
+
+  .logoPineapple {
+    background-image: url("images/Union.svg") !important;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .links {
+    margin-top: 21px;
+    line-height: 24px;
+  }
+
+  .links a {
+    margin-left: 16px;
+  }
+
+  .mobileImg {
+    width: 375px;
+    height: 746px;
+    background-image: url("images/summerMob.png");
+  }
+
+  .mobileField {
+    width: 295px;
+    height: fit-content;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    margin-top: 188px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+  }
+
+  .textContainer {
+    width: 295px;
+    height: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+    line-height: 34px;
+    padding-top: 30px;
+    color: #131821;
+  }
+
+  .subHeading {
+    line-height: 26px;
+  }
+
+  .subHeading p {
+    margin-top: 10px;
+  }
+
+  .greyText {
+    font-size: 14px;
+  }
+
+  .inputContainer {
+    height: 128px;
+    width: 295px;
+    margin-left: 0;
+  }
+
+  .blueStripe {
+    height: 60px;
+  }
+
+  .inputButton {
+    height: 60px;
+    width: 295px;
+  }
+
+  .emailInput {
+    width: 250px;
+    height: 60px;
+    padding-left: 18px;
+    padding-top: 3px;
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 46px;
+    height: 60px;
+    padding-right: 26px;
+  }
+
+  .checkBoxPosition {
+    margin-left: 0;
+    padding-top: 18px;
+  }
+
+  #box {
+    margin-left: 0;
+  }
+
+  .mainSpan {
+    font-size: 16px;
+  }
+
+  .alert {
+    margin-left: 0;
+    font-size: 14px;
+    width: 295px;
+  }
+
+  hr {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .socialLinksContainer {
+    margin-left: 33px;
+    height: 72px;
+  }
+
+  .wiki {
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .wiki:before {
+    opacity: 0.4;
+  }
+}

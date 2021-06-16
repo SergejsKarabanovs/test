@@ -1,0 +1,285 @@
+body {
+  margin: 0;
+}
+
+/* Main Container section */
+.mainContainer {
+  width: 1920px;
+  height: 1080px;
+}
+
+.baseContainer {
+  position: absolute;
+  width: 680px;
+  height: 1080px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+}
+
+.imageContainer {
+  position: absolute;
+  width: 1240px;
+  height: 1080px;
+  left: 680px;
+  z-index: -1;
+}
+
+/* Navigation bar section */
+.topBar {
+  width: 480px;
+  height: 40px;
+  margin-top: 100px;
+  margin-left: 100px;
+}
+
+.logoPineapple {
+  position: absolute;
+  width: 118px;
+  height: 40px;
+}
+
+.links {
+  margin-top: 14px;
+  line-height: 27px;
+  float: right;
+  margin-right: 1px;
+}
+
+.links a {
+  margin-left: 26px;
+  text-decoration: none;
+}
+
+/* Text parameters */
+.greyText {
+  font-family: Arial;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  color: #6A707B;
+}
+
+/* Middle area with text */
+.textContainer {
+  height: 399px;
+  margin-left: 140px;
+  margin-right: 141px;
+}
+
+.heading {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 44px;
+  padding-top: 229px;
+  margin-bottom: 21px;
+  color: #131821;
+}
+
+.subHeading {
+  line-height: 28px;
+}
+
+/* Horizontal rule */
+hr {
+  background-color: #E3E3E4;
+  margin: 0;
+  height: 1px;
+  border: 0;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+/* Social links section */
+.socialLinksContainer {
+  text-align: center;
+  margin-left: 218px;
+}
+
+.wiki {
+  width: 46px;
+  height: 46px;
+  float: left;
+  margin-right: 20px;
+  margin-top: 50px;
+  border-radius: 50%;
+  border: 2px #E3E3E4 solid;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.wiki:hover {
+  border: none;
+  box-shadow: 0px 20px 40px rgba(19, 24, 33, 0.3);
+}
+
+.wiki:hover:before {
+  color: white;
+  opacity: 1;
+}
+
+.wiki:active:before {
+  color: white;
+  opacity: 1;
+}
+
+/* Active state can be changed to visited */
+.icon-ic_facebook:hover {
+  background-color: #4267B2;
+}
+
+.icon-ic_facebook:active {
+  background-color: #2F4A80;
+}
+
+.icon-ic-instagram:hover {
+  background-color: #C13584;
+}
+
+.icon-ic-instagram:active {
+  background-color: #8F2762;
+}
+
+.icon-ic_twitter:hover {
+  background-color: #1DA1F2;
+}
+
+.icon-ic_twitter:active {
+  background-color: #177FBF;
+}
+
+.icon-ic-youtube:hover {
+  background-color: #FF0000;
+}
+
+.icon-ic-youtube:active {
+  background-color: #CC0000;
+}
+
+.successLogo {
+  position: absolute;
+  margin-top: 129px;
+  height: 70px;
+  width: 44px;
+  margin-left: 140px;
+}
+
+/* Mobile parameters */
+@media only screen and (max-width: 400px) {
+  .mainContainer {
+    width: 375px;
+    height: 812px;
+  }
+
+  .baseContainer {
+    position: absolute;
+    width: 375px;
+    height: 812px;
+  }
+
+  .imageContainer {
+    display: none;
+  }
+
+  .topBar {
+    width: 345px;
+    height: 66px;
+    margin-top: 0;
+    background: #FFFFFF;
+    margin-left: 10px;
+  }
+
+  .desktopApple {
+    display: none;
+  }
+
+  .logoPineapple {
+    background-image: url("images/Union.svg") !important;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+
+  .links {
+    margin-top: 21px;
+    line-height: 24px;
+  }
+
+  .links a {
+    margin-left: 16px;
+  }
+
+  .mobileImg {
+    width: 375px;
+    height: 746px;
+    background-image: url("images/summerMob.png");
+  }
+
+  .mobileField {
+    width: 295px;
+    height: fit-content;
+    margin-left: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: absolute;
+    margin-top: 188px;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F5FA 100%);
+  }
+
+  .successLogo {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .textContainer {
+    width: 295px;
+    height: fit-content;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .heading {
+    font-size: 24px;
+    line-height: 34px;
+    padding-top: 139px;
+    margin-bottom: 10px;
+    color: #131821;
+  }
+
+  .subHeading {
+    line-height: 26px;
+  }
+
+  .subHeading p {
+    margin-top: 10px;
+  }
+
+  .greyText {
+    font-size: 14px;
+  }
+
+  hr {
+    margin-top: 39px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .socialLinksContainer {
+    margin-left: 33px;
+    height: 72px;
+  }
+
+  .wiki {
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+  .wiki:before {
+    opacity: 0.4;
+  }
+}

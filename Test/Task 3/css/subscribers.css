@@ -1,0 +1,43 @@
+/* Styles for subscribers list */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 5px;
+}
+
+.sort:hover {
+    cursor: pointer;
+    background-color: #DDDDDD;
+}
+
+.margin {
+  margin-bottom: 20px;
+}
+
+/* Styles for pagination */
+
+.center {
+  display: inline-block
+}
+
+.pagination {
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+  border-radius: 5px;
+}
